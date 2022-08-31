@@ -1,0 +1,9 @@
+# backend
+/backend/node_modules
+/backend/dist
+/backend/.env
+
+# Background services
+/background-services/dist
+/background-services/node_modules
+/background-services/.env
