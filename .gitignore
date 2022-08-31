@@ -7,3 +7,47 @@
 /background-services/dist
 /background-services/node_modules
 /background-services/.env
+
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/jitu-project-manager/dist
+/jitu-project-manager/tmp
+/jitu-project-manager/out-tsc
+/jitu-project-manager/bazel-out
+
+# Node
+/jitu-project-manager/node_modules
+/jitu-project-manager/npm-debug.log
+/jitu-project-manager/yarn-error.log
+
+# IDEs and editors
+/jitu-project-manager/.idea/
+/jitu-project-manager/.project
+/jitu-project-manager/.classpath
+/jitu-project-manager/.c9/
+/jitu-project-manager/*.launch
+/jitu-project-manager/.settings/
+/jitu-project-manager/*.sublime-workspace
+
+# Visual Studio Code
+/jitu-project-manager/.vscode/*
+/jitu-project-manager/!.vscode/settings.json
+/jitu-project-manager/!.vscode/tasks.json
+/jitu-project-manager/!.vscode/launch.json
+/jitu-project-manager/!.vscode/extensions.json
+/jitu-project-manager/.history/*
+
+# Miscellaneous
+/jitu-project-manager/.angular/cache
+/jitu-project-manager/.sass-cache/
+/jitu-project-manager/connect.lock
+/jitu-project-manager/coverage
+/jitu-project-manager/libpeerconnection.log
+/jitu-project-manager/testem.log
+/jitu-project-manager/typings
+
+# System files
+/jitu-project-manager/.DS_Store
+/jitu-project-manager/Thumbs.db
