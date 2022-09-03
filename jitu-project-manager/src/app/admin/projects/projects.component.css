@@ -1,0 +1,33 @@
+/* User */
+.projects {
+  /* background-color: aqua; */
+  color: #fff;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+.projects table {
+  width: 100%;
+  color: initial;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  border-radius: 3px;
+}
+table thead tr td,
+tbody tr td {
+  border: 2px solid #c4c2c2;
+  color: #fff;
+  padding: 0.7rem;
+}
+table .project-status div {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #06a791;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}

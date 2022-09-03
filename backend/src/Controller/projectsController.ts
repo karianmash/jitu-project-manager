@@ -51,6 +51,26 @@ export async function getProjects(req: ProjectRequest, res: Response) {
   }
 }
 
+// Unassigned projects
+export async function getUnassignedProjects(
+  req: ProjectRequest,
+  res: Response
+) {
+  try {
+    const pool = await mssql.connect(sqlConfig);
+    const allprojects = (
+      await pool.query(`SELECT * FROM projects WHERE status='unassigned'`)
+    ).recordset;
+
+    // console.log(allprojects);
+    console.log(allprojects);
+
+    res.json(allprojects);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 // GetSingleProject
 // Get all projects
 // export async function get(req: ProjectRequest, res: Response) {

@@ -1,0 +1,15 @@
+<app-header></app-header>
+
+<div class="dashboard-container">
+  <div class="sidebar">
+    <a routerLink="/admin">Dashboard</a>
+    <a routerLink="/admin/projects">Projects</a>
+    <a routerLink="/admin/addproject">Add project</a>
+    <a routerLink="/admin/users">Users</a>
+  </div>
+  <div class="main-content">
+    <!-- not found -->
+    <!-- <app-not-found></app-not-found> -->
+    <router-outlet></router-outlet>
+  </div>
+</div>

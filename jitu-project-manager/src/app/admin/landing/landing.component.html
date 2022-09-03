@@ -1,0 +1,33 @@
+<div class="projects" *ngIf="projects.length; else fallback">
+  <h3>All assigned projects</h3>
+  <!-- Users -->
+  <table>
+    <thead>
+      <tr>
+        <td>#</td>
+        <td>User</td>
+        <td>Title</td>
+        <td>Description</td>
+        <td>Status</td>
+        <td>Deadline</td>
+      </tr>
+    </thead>
+    <tbody *ngFor="let project of projects; let i = index">
+      <tr>
+        <td>{{ i + 1 }}</td>
+        <td>{{ project.user }}</td>
+        <td>{{ project.title }}</td>
+        <td>{{ project.description }}</td>
+        <td class="project-status">
+          <div>{{ project.status }}</div>
+        </td>
+        <td>{{ project.deadline }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Show fallback if no projects -->
+<ng-template #fallback>
+  <app-not-found></app-not-found>
+</ng-template>

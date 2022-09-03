@@ -1,0 +1,74 @@
+.add-project {
+  width: 96%;
+  color: initial;
+  height: 96%;
+  padding: 0 0.5rem;
+  margin: 0 auto;
+  color: #fff;
+}
+.add-project h3 {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.add-project hr {
+  color: #333547;
+}
+.add-project form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.add-project form div {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: column;
+}
+.add-project form div:first-child {
+  margin-top: 1.5rem;
+}
+.add-project form div:last-child {
+  width: 40%;
+  align-self: center;
+}
+.add-project form div:last-child input {
+  border-radius: 3px;
+  border: none;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: rgb(7, 133, 187);
+}
+.add-project form div:last-child input:hover {
+  transform: scale(1.02);
+}
+.add-project form div label {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+.add-project form div input,
+.main .main-area .add-project form div select {
+  color: #fff;
+  font-size: 1.1rem;
+  height: 2.3rem;
+  border: 2px solid #fff;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 3px;
+  padding-left: 0.6rem;
+}
+.add-project form div input:focus,
+.main .main-area .add-project form div select:focus {
+  outline: none;
+}
+.add-project form div textarea {
+  border: 2px solid #fff;
+  width: 100%;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 3px;
+  padding: 0.6rem;
+}
+.add-project form div textarea:focus {
+  outline: none;
+}

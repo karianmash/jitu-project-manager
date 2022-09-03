@@ -1,30 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContainerComponent } from './container/container.component';
-import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
-import { RegisterComponent } from './register/register.component';
-import { LoginComponent } from './login/login.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AuthModule } from './auth/auth.module';
+import { SharedModule } from './shared/shared.module';
+import { AdminModule } from './admin/admin.module';
+import { UserModule } from './user/user.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ContainerComponent,
-    HeaderComponent,
-    HeroComponent,
-    RegisterComponent,
-    LoginComponent,
-    DashboardComponent
-  ],
+  declarations: [AppComponent, ContainerComponent, HeroComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    SharedModule,
+    AdminModule,
+    UserModule,
+    AuthModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

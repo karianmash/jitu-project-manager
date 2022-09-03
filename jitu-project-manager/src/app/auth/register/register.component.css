@@ -60,6 +60,9 @@ form .form-input input {
   padding-left: 0.5rem;
   background-color: rgb(224, 224, 224);
 }
+form .form-input input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
 form .form-input input:focus {
   outline: none;
 }

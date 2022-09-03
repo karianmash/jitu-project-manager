@@ -1,0 +1,44 @@
+.header-nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 96%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.header-nav div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+
+/* Accounts */
+.header-nav div:last-child a {
+  margin: 0 0.6rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.header-nav div:last-child a:hover {
+  color: rgb(56 189 248);
+}
+
+/* logout/name */
+.header-nav div:last-child p {
+  margin: 0 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.header-nav div:last-child p:first-child span {
+  color: rgb(56 189 248);
+  margin-left: 0.5rem;
+}
+.header-nav div:last-child p:last-child {
+  cursor: pointer;
+}
+.header-nav div:last-child p:last-child:hover {
+  color: rgb(56 189 248);
+}

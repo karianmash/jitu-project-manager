@@ -1,32 +1,37 @@
+<app-header></app-header>
 <div class="register-container">
   <div class="form-wrapper">
     <!-- image -->
     <div><img src="assets/chart.png" /></div>
     <!-- form -->
-    <form action="">
+    <form [formGroup]="reactiveRegisterForm" (ngSubmit)="onSubmit()">
       <h3>Get started</h3>
+      <!-- username -->
       <div class="form-input">
         <label for=""></label>
-        <input type="text" placeholder="Username" />
+        <input type="text" placeholder="Username" formControlName="username" />
       </div>
+      <!-- email -->
       <div class="form-input">
         <label for=""></label>
-        <input type="email" placeholder="Email" />
+        <input type="email" placeholder="Email" formControlName="email" />
       </div>
+      <!-- password -->
       <div class="form-input">
         <label for=""></label>
-        <input type="password" placeholder="Password" />
+        <input
+          type="password"
+          placeholder="Password"
+          formControlName="password"
+        />
       </div>
-      <div class="form-input">
-        <label for=""></label>
-        <input type="password" placeholder="Confirm password" />
-      </div>
+      <!-- submit -->
       <div class="form-input">
         <label for=""></label>
         <input type="submit" value="Get Started" />
       </div>
       <!-- sign in -->
-      <p>Already have an account? <a href="">Sign in</a></p>
+      <p>Already have an account? <a routerLink="/login">Sign in</a></p>
     </form>
   </div>
 </div>

@@ -1,0 +1,15 @@
+<div class="header-nav">
+  <!-- logo -->
+  <div>
+    <a routerLink="/"><img src="assets/logo-jitu.png" /></a>
+  </div>
+  <!-- accounts -->
+  <div>
+    <a routerLink="/login" *ngIf="isLoggedIn === 'false'"><p>Sign in</p></a>
+    <a routerLink="/register" *ngIf="isLoggedIn === 'false'"><p>Sign up</p></a>
+    <p *ngIf="isLoggedIn === 'true'">
+      Welcome<span>{{ name }}</span>
+    </p>
+    <p *ngIf="isLoggedIn === 'true'" (click)="logout()">Logout</p>
+  </div>
+</div>
