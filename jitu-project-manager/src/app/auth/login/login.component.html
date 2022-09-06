@@ -4,19 +4,46 @@
     <!-- image -->
     <div><img src="assets/climb.png" /></div>
     <!-- form -->
-    <form action="">
+    <form (ngSubmit)="onFormSubmit()" #form="ngForm">
       <h3>Welcome back</h3>
+      <span *ngIf="wrongCredentials === true" style="margin-bottom: 0.6rem"
+        >* Invalid credentials!</span
+      >
+      <!-- Email -->
       <div class="form-input">
         <label for=""></label>
-        <input type="email" placeholder="Email" />
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          ngModel
+          required
+          email
+          #email="ngModel"
+        />
+        <span *ngIf="!email.valid && email.touched"
+          >* Please fill in a valid email!</span
+        >
       </div>
+      <!-- Password -->
       <div class="form-input">
         <label for=""></label>
-        <input type="password" placeholder="Password" />
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          ngModel
+          required
+          #password="ngModel"
+        />
+        <span *ngIf="password.value === '' && password.touched"
+          >* Password is required!</span
+        >
       </div>
+      <!-- submit -->
       <div class="form-input">
         <label for=""></label>
-        <input type="submit" value="Login" />
+        <input type="submit" value="Login" [disabled]="!form.valid" />
       </div>
       <!-- sign in -->
       <p>Don't have an account? <a routerLink="/register">Sign up</a></p>

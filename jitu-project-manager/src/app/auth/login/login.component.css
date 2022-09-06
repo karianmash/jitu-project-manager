@@ -44,7 +44,7 @@
 }
 form h3 {
   font-size: 2rem;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem;
 }
 form .form-input {
   width: 100%;
@@ -54,11 +54,15 @@ form .form-input {
 }
 form .form-input input {
   height: 2.7rem;
+  margin: 0 0 0.6rem;
   width: 100%;
   border-radius: 5px;
   border: none;
   padding-left: 0.5rem;
   background-color: rgb(224, 224, 224);
+}
+form span {
+  color: red;
 }
 form .form-input input:focus {
   outline: none;

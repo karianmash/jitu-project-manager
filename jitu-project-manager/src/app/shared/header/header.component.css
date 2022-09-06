@@ -11,6 +11,9 @@
   display: flex;
   align-items: center;
 }
+.header-nav div:first-child {
+  cursor: pointer;
+}
 
 /* Logo */
 

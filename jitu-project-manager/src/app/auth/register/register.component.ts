@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthService } from '../service/auth.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { AuthService } from '../service/auth.service';
 export class RegisterComponent implements OnInit {
   reactiveRegisterForm: FormGroup;
 
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService, private router: Router) {}
 
   ngOnInit() {
     // You can pass some default values by passing them to FormControl constructor
@@ -36,5 +37,7 @@ export class RegisterComponent implements OnInit {
     });
 
     this.authService.createUser(user);
+
+    this.router.navigate(['/login']);
   }
 }
